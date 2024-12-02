@@ -114,17 +114,35 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rjToggleButton0 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton6 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.label38 = new System.Windows.Forms.Label();
+            this.rjToggleButton5 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.label39 = new System.Windows.Forms.Label();
+            this.rjToggleButton3 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton7 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton4 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.label40 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
+            this.rjToggleButton10 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton8 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton2 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.label42 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
+            this.rjToggleButton1 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton15 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton9 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton11 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton14 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton13 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton17 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton12 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
+            this.rjToggleButton16 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -145,24 +163,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.rjToggleButton21 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.rjToggleButton20 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.rjToggleButton19 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton0 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton6 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton5 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton3 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton7 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton4 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton10 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton8 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton2 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton1 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton15 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton9 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton11 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton14 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton13 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton17 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton12 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
-            this.rjToggleButton16 = new PKGSawKit_CleanerSystem_New_K4_2.RJControls.RJToggleButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -971,23 +971,23 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Navy;
+            this.label52.ForeColor = System.Drawing.Color.Silver;
             this.label52.Location = new System.Drawing.Point(61, 175);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(208, 25);
+            this.label52.Size = new System.Drawing.Size(116, 25);
             this.label52.TabIndex = 102;
-            this.label52.Text = "[Y22] CH2. Curtain air";
+            this.label52.Text = "[Y22] Spare";
             // 
             // label51
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Silver;
+            this.label51.ForeColor = System.Drawing.Color.Navy;
             this.label51.Location = new System.Drawing.Point(61, 142);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(116, 25);
+            this.label51.Size = new System.Drawing.Size(208, 25);
             this.label51.TabIndex = 100;
-            this.label51.Text = "[Y21] Spare";
+            this.label51.Text = "[Y21] CH2. Curtain air";
             // 
             // label50
             // 
@@ -996,9 +996,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label50.ForeColor = System.Drawing.Color.Navy;
             this.label50.Location = new System.Drawing.Point(61, 109);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(201, 25);
+            this.label50.Size = new System.Drawing.Size(208, 25);
             this.label50.TabIndex = 98;
-            this.label50.Text = "[Y20] CH2. Top water";
+            this.label50.Text = "[Y20] CH2. Bottom air";
             // 
             // label49
             // 
@@ -1007,9 +1007,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label49.ForeColor = System.Drawing.Color.Navy;
             this.label49.Location = new System.Drawing.Point(61, 76);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(208, 25);
+            this.label49.Size = new System.Drawing.Size(174, 25);
             this.label49.TabIndex = 63;
-            this.label49.Text = "[Y19] CH2. Bottom air";
+            this.label49.Text = "[Y19] CH2. Top air";
             // 
             // label48
             // 
@@ -1018,9 +1018,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label48.ForeColor = System.Drawing.Color.Navy;
             this.label48.Location = new System.Drawing.Point(61, 43);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(174, 25);
+            this.label48.Size = new System.Drawing.Size(201, 25);
             this.label48.TabIndex = 61;
-            this.label48.Text = "[Y18] CH2. Top air";
+            this.label48.Text = "[Y18] CH2. Top water";
             // 
             // label47
             // 
@@ -1091,38 +1091,134 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "OUTPUT";
             // 
+            // rjToggleButton0
+            // 
+            this.rjToggleButton0.AutoSize = true;
+            this.rjToggleButton0.Location = new System.Drawing.Point(10, 46);
+            this.rjToggleButton0.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton0.Name = "rjToggleButton0";
+            this.rjToggleButton0.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton0.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton0.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton0.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton0.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton0.TabIndex = 24;
+            this.rjToggleButton0.Tag = "0";
+            this.rjToggleButton0.UseVisualStyleBackColor = true;
+            this.rjToggleButton0.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton6
+            // 
+            this.rjToggleButton6.AutoSize = true;
+            this.rjToggleButton6.Location = new System.Drawing.Point(10, 244);
+            this.rjToggleButton6.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton6.Name = "rjToggleButton6";
+            this.rjToggleButton6.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton6.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton6.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton6.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton6.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton6.TabIndex = 36;
+            this.rjToggleButton6.Tag = "6";
+            this.rjToggleButton6.UseVisualStyleBackColor = true;
+            this.rjToggleButton6.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.Silver;
+            this.label38.ForeColor = System.Drawing.Color.Navy;
             this.label38.Location = new System.Drawing.Point(61, 208);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(116, 25);
+            this.label38.Size = new System.Drawing.Size(208, 25);
             this.label38.TabIndex = 35;
-            this.label38.Text = "[Y05] Spare";
+            this.label38.Text = "[Y05] CH1. Curtain air";
+            // 
+            // rjToggleButton5
+            // 
+            this.rjToggleButton5.AutoSize = true;
+            this.rjToggleButton5.Location = new System.Drawing.Point(10, 211);
+            this.rjToggleButton5.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton5.Name = "rjToggleButton5";
+            this.rjToggleButton5.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton5.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton5.TabIndex = 34;
+            this.rjToggleButton5.Tag = "5";
+            this.rjToggleButton5.UseVisualStyleBackColor = true;
+            this.rjToggleButton5.Click += new System.EventHandler(this.rjToggleButton0_Click);
             // 
             // label39
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Navy;
+            this.label39.ForeColor = System.Drawing.Color.Silver;
             this.label39.Location = new System.Drawing.Point(61, 241);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(208, 25);
+            this.label39.Size = new System.Drawing.Size(116, 25);
             this.label39.TabIndex = 37;
-            this.label39.Text = "[Y06] CH1. Curtain air";
+            this.label39.Text = "[Y06] Spare";
+            // 
+            // rjToggleButton3
+            // 
+            this.rjToggleButton3.AutoSize = true;
+            this.rjToggleButton3.Location = new System.Drawing.Point(10, 145);
+            this.rjToggleButton3.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton3.Name = "rjToggleButton3";
+            this.rjToggleButton3.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton3.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton3.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton3.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton3.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton3.TabIndex = 30;
+            this.rjToggleButton3.Tag = "3";
+            this.rjToggleButton3.UseVisualStyleBackColor = true;
+            this.rjToggleButton3.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton7
+            // 
+            this.rjToggleButton7.AutoSize = true;
+            this.rjToggleButton7.Location = new System.Drawing.Point(10, 277);
+            this.rjToggleButton7.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton7.Name = "rjToggleButton7";
+            this.rjToggleButton7.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton7.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton7.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton7.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton7.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton7.TabIndex = 38;
+            this.rjToggleButton7.Tag = "7";
+            this.rjToggleButton7.UseVisualStyleBackColor = true;
+            this.rjToggleButton7.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton4
+            // 
+            this.rjToggleButton4.AutoSize = true;
+            this.rjToggleButton4.Location = new System.Drawing.Point(10, 178);
+            this.rjToggleButton4.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton4.Name = "rjToggleButton4";
+            this.rjToggleButton4.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton4.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton4.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton4.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton4.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton4.TabIndex = 32;
+            this.rjToggleButton4.Tag = "4";
+            this.rjToggleButton4.UseVisualStyleBackColor = true;
+            this.rjToggleButton4.Click += new System.EventHandler(this.rjToggleButton0_Click);
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Navy;
+            this.label40.ForeColor = System.Drawing.Color.Silver;
             this.label40.Location = new System.Drawing.Point(61, 274);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(132, 25);
+            this.label40.Size = new System.Drawing.Size(116, 25);
             this.label40.TabIndex = 39;
-            this.label40.Text = "[Y07] F_Lamp";
+            this.label40.Text = "[Y07] Spare";
             // 
             // label36
             // 
@@ -1131,9 +1227,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label36.ForeColor = System.Drawing.Color.Navy;
             this.label36.Location = new System.Drawing.Point(61, 142);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(208, 25);
+            this.label36.Size = new System.Drawing.Size(174, 25);
             this.label36.TabIndex = 31;
-            this.label36.Text = "[Y03] CH1. Bottom air";
+            this.label36.Text = "[Y03] CH1. Top air";
             // 
             // label37
             // 
@@ -1142,9 +1238,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label37.ForeColor = System.Drawing.Color.Navy;
             this.label37.Location = new System.Drawing.Point(61, 175);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(201, 25);
+            this.label37.Size = new System.Drawing.Size(208, 25);
             this.label37.TabIndex = 33;
-            this.label37.Text = "[Y04] CH1. Top water";
+            this.label37.Text = "[Y04] CH1. Bottom air";
             // 
             // label33
             // 
@@ -1156,6 +1252,54 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label33.Size = new System.Drawing.Size(116, 25);
             this.label33.TabIndex = 25;
             this.label33.Text = "[Y00] Spare";
+            // 
+            // rjToggleButton10
+            // 
+            this.rjToggleButton10.AutoSize = true;
+            this.rjToggleButton10.Location = new System.Drawing.Point(10, 376);
+            this.rjToggleButton10.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton10.Name = "rjToggleButton10";
+            this.rjToggleButton10.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton10.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton10.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton10.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton10.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton10.TabIndex = 44;
+            this.rjToggleButton10.Tag = "10";
+            this.rjToggleButton10.UseVisualStyleBackColor = true;
+            this.rjToggleButton10.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton8
+            // 
+            this.rjToggleButton8.AutoSize = true;
+            this.rjToggleButton8.Location = new System.Drawing.Point(10, 310);
+            this.rjToggleButton8.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton8.Name = "rjToggleButton8";
+            this.rjToggleButton8.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton8.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton8.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton8.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton8.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton8.TabIndex = 40;
+            this.rjToggleButton8.Tag = "8";
+            this.rjToggleButton8.UseVisualStyleBackColor = true;
+            this.rjToggleButton8.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton2
+            // 
+            this.rjToggleButton2.AutoSize = true;
+            this.rjToggleButton2.Location = new System.Drawing.Point(10, 112);
+            this.rjToggleButton2.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton2.Name = "rjToggleButton2";
+            this.rjToggleButton2.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton2.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton2.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton2.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton2.TabIndex = 28;
+            this.rjToggleButton2.Tag = "2";
+            this.rjToggleButton2.UseVisualStyleBackColor = true;
+            this.rjToggleButton2.Click += new System.EventHandler(this.rjToggleButton0_Click);
             // 
             // label42
             // 
@@ -1186,9 +1330,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label35.ForeColor = System.Drawing.Color.Navy;
             this.label35.Location = new System.Drawing.Point(61, 109);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(174, 25);
+            this.label35.Size = new System.Drawing.Size(201, 25);
             this.label35.TabIndex = 29;
-            this.label35.Text = "[Y02] CH1. Top air";
+            this.label35.Text = "[Y02] CH1. Top water";
             // 
             // label41
             // 
@@ -1212,16 +1356,160 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label43.TabIndex = 45;
             this.label43.Text = "[Y10] CH1. Brush fw/bw";
             // 
+            // rjToggleButton1
+            // 
+            this.rjToggleButton1.AutoSize = true;
+            this.rjToggleButton1.Location = new System.Drawing.Point(10, 79);
+            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton1.Name = "rjToggleButton1";
+            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton1.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton1.TabIndex = 26;
+            this.rjToggleButton1.Tag = "1";
+            this.rjToggleButton1.UseVisualStyleBackColor = true;
+            this.rjToggleButton1.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton15
+            // 
+            this.rjToggleButton15.AutoSize = true;
+            this.rjToggleButton15.Location = new System.Drawing.Point(10, 541);
+            this.rjToggleButton15.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton15.Name = "rjToggleButton15";
+            this.rjToggleButton15.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton15.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton15.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton15.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton15.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton15.TabIndex = 90;
+            this.rjToggleButton15.Tag = "15";
+            this.rjToggleButton15.UseVisualStyleBackColor = true;
+            this.rjToggleButton15.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton9
+            // 
+            this.rjToggleButton9.AutoSize = true;
+            this.rjToggleButton9.Location = new System.Drawing.Point(10, 343);
+            this.rjToggleButton9.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton9.Name = "rjToggleButton9";
+            this.rjToggleButton9.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton9.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton9.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton9.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton9.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton9.TabIndex = 42;
+            this.rjToggleButton9.Tag = "9";
+            this.rjToggleButton9.UseVisualStyleBackColor = true;
+            this.rjToggleButton9.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton11
+            // 
+            this.rjToggleButton11.AutoSize = true;
+            this.rjToggleButton11.Location = new System.Drawing.Point(10, 409);
+            this.rjToggleButton11.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton11.Name = "rjToggleButton11";
+            this.rjToggleButton11.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton11.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton11.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton11.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton11.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton11.TabIndex = 46;
+            this.rjToggleButton11.Tag = "11";
+            this.rjToggleButton11.UseVisualStyleBackColor = true;
+            this.rjToggleButton11.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton14
+            // 
+            this.rjToggleButton14.AutoSize = true;
+            this.rjToggleButton14.Location = new System.Drawing.Point(10, 508);
+            this.rjToggleButton14.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton14.Name = "rjToggleButton14";
+            this.rjToggleButton14.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton14.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton14.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton14.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton14.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton14.TabIndex = 89;
+            this.rjToggleButton14.Tag = "14";
+            this.rjToggleButton14.UseVisualStyleBackColor = true;
+            this.rjToggleButton14.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton13
+            // 
+            this.rjToggleButton13.AutoSize = true;
+            this.rjToggleButton13.Location = new System.Drawing.Point(10, 475);
+            this.rjToggleButton13.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton13.Name = "rjToggleButton13";
+            this.rjToggleButton13.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton13.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton13.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton13.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton13.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton13.TabIndex = 88;
+            this.rjToggleButton13.Tag = "13";
+            this.rjToggleButton13.UseVisualStyleBackColor = true;
+            this.rjToggleButton13.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton17
+            // 
+            this.rjToggleButton17.AutoSize = true;
+            this.rjToggleButton17.Location = new System.Drawing.Point(10, 607);
+            this.rjToggleButton17.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton17.Name = "rjToggleButton17";
+            this.rjToggleButton17.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton17.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton17.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton17.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton17.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton17.TabIndex = 99;
+            this.rjToggleButton17.Tag = "17";
+            this.rjToggleButton17.UseVisualStyleBackColor = true;
+            this.rjToggleButton17.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton12
+            // 
+            this.rjToggleButton12.AutoSize = true;
+            this.rjToggleButton12.Location = new System.Drawing.Point(10, 442);
+            this.rjToggleButton12.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton12.Name = "rjToggleButton12";
+            this.rjToggleButton12.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton12.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton12.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton12.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton12.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton12.TabIndex = 48;
+            this.rjToggleButton12.Tag = "12";
+            this.rjToggleButton12.UseVisualStyleBackColor = true;
+            this.rjToggleButton12.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
+            // rjToggleButton16
+            // 
+            this.rjToggleButton16.AutoSize = true;
+            this.rjToggleButton16.Location = new System.Drawing.Point(10, 574);
+            this.rjToggleButton16.MinimumSize = new System.Drawing.Size(45, 22);
+            this.rjToggleButton16.Name = "rjToggleButton16";
+            this.rjToggleButton16.OffBackColor = System.Drawing.Color.Gray;
+            this.rjToggleButton16.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.rjToggleButton16.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjToggleButton16.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.rjToggleButton16.Size = new System.Drawing.Size(45, 22);
+            this.rjToggleButton16.TabIndex = 97;
+            this.rjToggleButton16.Tag = "16";
+            this.rjToggleButton16.UseVisualStyleBackColor = true;
+            this.rjToggleButton16.Click += new System.EventHandler(this.rjToggleButton0_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.ForeColor = System.Drawing.Color.Navy;
             this.label8.Location = new System.Drawing.Point(61, 340);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 25);
+            this.label8.Size = new System.Drawing.Size(203, 25);
             this.label8.TabIndex = 106;
-            this.label8.Text = "[Y27] Spare";
+            this.label8.Text = "[Y27] Tower lamp red";
             // 
             // label60
             // 
@@ -1230,9 +1518,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label60.ForeColor = System.Drawing.Color.Navy;
             this.label60.Location = new System.Drawing.Point(61, 472);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(125, 25);
+            this.label60.Size = new System.Drawing.Size(132, 25);
             this.label60.TabIndex = 103;
-            this.label60.Text = "[Y31] Buzzer";
+            this.label60.Text = "[Y31] F_Lamp";
             // 
             // label59
             // 
@@ -1241,9 +1529,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label59.ForeColor = System.Drawing.Color.Navy;
             this.label59.Location = new System.Drawing.Point(61, 439);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(203, 25);
+            this.label59.Size = new System.Drawing.Size(125, 25);
             this.label59.TabIndex = 101;
-            this.label59.Text = "[Y30] Tower lamp red";
+            this.label59.Text = "[Y30] Buzzer";
             // 
             // label58
             // 
@@ -1252,9 +1540,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label58.ForeColor = System.Drawing.Color.Navy;
             this.label58.Location = new System.Drawing.Point(61, 406);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(230, 25);
+            this.label58.Size = new System.Drawing.Size(225, 25);
             this.label58.TabIndex = 99;
-            this.label58.Text = "[Y29] Tower lamp yellow";
+            this.label58.Text = "[Y29] Tower lamp green";
             // 
             // label57
             // 
@@ -1263,9 +1551,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.label57.ForeColor = System.Drawing.Color.Navy;
             this.label57.Location = new System.Drawing.Point(61, 373);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(225, 25);
+            this.label57.Size = new System.Drawing.Size(230, 25);
             this.label57.TabIndex = 97;
-            this.label57.Text = "[Y28] Tower lamp green";
+            this.label57.Text = "[Y28] Tower lamp yellow";
             // 
             // groupBox4
             // 
@@ -1448,7 +1736,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.rjToggleButton23.TabIndex = 103;
             this.rjToggleButton23.Tag = "23";
             this.rjToggleButton23.UseVisualStyleBackColor = true;
-            this.rjToggleButton23.Click += new System.EventHandler(this.rjToggleButton27_Click);
+            this.rjToggleButton23.Click += new System.EventHandler(this.rjToggleButton18_Click);
             // 
             // rjToggleButton24
             // 
@@ -1529,294 +1817,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             this.rjToggleButton19.Tag = "19";
             this.rjToggleButton19.UseVisualStyleBackColor = true;
             this.rjToggleButton19.Click += new System.EventHandler(this.rjToggleButton18_Click);
-            // 
-            // rjToggleButton0
-            // 
-            this.rjToggleButton0.AutoSize = true;
-            this.rjToggleButton0.Location = new System.Drawing.Point(10, 46);
-            this.rjToggleButton0.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton0.Name = "rjToggleButton0";
-            this.rjToggleButton0.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton0.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton0.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton0.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton0.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton0.TabIndex = 24;
-            this.rjToggleButton0.Tag = "0";
-            this.rjToggleButton0.UseVisualStyleBackColor = true;
-            this.rjToggleButton0.Click += new System.EventHandler(this.rjToggleButton27_Click);
-            // 
-            // rjToggleButton6
-            // 
-            this.rjToggleButton6.AutoSize = true;
-            this.rjToggleButton6.Location = new System.Drawing.Point(10, 244);
-            this.rjToggleButton6.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton6.Name = "rjToggleButton6";
-            this.rjToggleButton6.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton6.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton6.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton6.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton6.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton6.TabIndex = 36;
-            this.rjToggleButton6.Tag = "6";
-            this.rjToggleButton6.UseVisualStyleBackColor = true;
-            this.rjToggleButton6.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton5
-            // 
-            this.rjToggleButton5.AutoSize = true;
-            this.rjToggleButton5.Location = new System.Drawing.Point(10, 211);
-            this.rjToggleButton5.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton5.Name = "rjToggleButton5";
-            this.rjToggleButton5.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton5.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton5.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton5.TabIndex = 34;
-            this.rjToggleButton5.Tag = "5";
-            this.rjToggleButton5.UseVisualStyleBackColor = true;
-            this.rjToggleButton5.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton3
-            // 
-            this.rjToggleButton3.AutoSize = true;
-            this.rjToggleButton3.Location = new System.Drawing.Point(10, 145);
-            this.rjToggleButton3.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton3.Name = "rjToggleButton3";
-            this.rjToggleButton3.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton3.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton3.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton3.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton3.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton3.TabIndex = 30;
-            this.rjToggleButton3.Tag = "3";
-            this.rjToggleButton3.UseVisualStyleBackColor = true;
-            this.rjToggleButton3.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton7
-            // 
-            this.rjToggleButton7.AutoSize = true;
-            this.rjToggleButton7.Location = new System.Drawing.Point(10, 277);
-            this.rjToggleButton7.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton7.Name = "rjToggleButton7";
-            this.rjToggleButton7.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton7.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton7.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton7.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton7.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton7.TabIndex = 38;
-            this.rjToggleButton7.Tag = "7";
-            this.rjToggleButton7.UseVisualStyleBackColor = true;
-            this.rjToggleButton7.Click += new System.EventHandler(this.rjToggleButton27_Click);
-            // 
-            // rjToggleButton4
-            // 
-            this.rjToggleButton4.AutoSize = true;
-            this.rjToggleButton4.Location = new System.Drawing.Point(10, 178);
-            this.rjToggleButton4.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton4.Name = "rjToggleButton4";
-            this.rjToggleButton4.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton4.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton4.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton4.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton4.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton4.TabIndex = 32;
-            this.rjToggleButton4.Tag = "4";
-            this.rjToggleButton4.UseVisualStyleBackColor = true;
-            this.rjToggleButton4.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton10
-            // 
-            this.rjToggleButton10.AutoSize = true;
-            this.rjToggleButton10.Location = new System.Drawing.Point(10, 376);
-            this.rjToggleButton10.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton10.Name = "rjToggleButton10";
-            this.rjToggleButton10.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton10.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton10.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton10.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton10.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton10.TabIndex = 44;
-            this.rjToggleButton10.Tag = "10";
-            this.rjToggleButton10.UseVisualStyleBackColor = true;
-            this.rjToggleButton10.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton8
-            // 
-            this.rjToggleButton8.AutoSize = true;
-            this.rjToggleButton8.Location = new System.Drawing.Point(10, 310);
-            this.rjToggleButton8.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton8.Name = "rjToggleButton8";
-            this.rjToggleButton8.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton8.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton8.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton8.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton8.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton8.TabIndex = 40;
-            this.rjToggleButton8.Tag = "8";
-            this.rjToggleButton8.UseVisualStyleBackColor = true;
-            this.rjToggleButton8.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton2
-            // 
-            this.rjToggleButton2.AutoSize = true;
-            this.rjToggleButton2.Location = new System.Drawing.Point(10, 112);
-            this.rjToggleButton2.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton2.Name = "rjToggleButton2";
-            this.rjToggleButton2.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton2.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton2.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton2.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton2.TabIndex = 28;
-            this.rjToggleButton2.Tag = "2";
-            this.rjToggleButton2.UseVisualStyleBackColor = true;
-            this.rjToggleButton2.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton1
-            // 
-            this.rjToggleButton1.AutoSize = true;
-            this.rjToggleButton1.Location = new System.Drawing.Point(10, 79);
-            this.rjToggleButton1.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton1.Name = "rjToggleButton1";
-            this.rjToggleButton1.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton1.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton1.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton1.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton1.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton1.TabIndex = 26;
-            this.rjToggleButton1.Tag = "1";
-            this.rjToggleButton1.UseVisualStyleBackColor = true;
-            this.rjToggleButton1.Click += new System.EventHandler(this.rjToggleButton27_Click);
-            // 
-            // rjToggleButton15
-            // 
-            this.rjToggleButton15.AutoSize = true;
-            this.rjToggleButton15.Location = new System.Drawing.Point(10, 541);
-            this.rjToggleButton15.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton15.Name = "rjToggleButton15";
-            this.rjToggleButton15.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton15.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton15.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton15.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton15.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton15.TabIndex = 90;
-            this.rjToggleButton15.Tag = "15";
-            this.rjToggleButton15.UseVisualStyleBackColor = true;
-            this.rjToggleButton15.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton9
-            // 
-            this.rjToggleButton9.AutoSize = true;
-            this.rjToggleButton9.Location = new System.Drawing.Point(10, 343);
-            this.rjToggleButton9.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton9.Name = "rjToggleButton9";
-            this.rjToggleButton9.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton9.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton9.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton9.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton9.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton9.TabIndex = 42;
-            this.rjToggleButton9.Tag = "9";
-            this.rjToggleButton9.UseVisualStyleBackColor = true;
-            this.rjToggleButton9.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton11
-            // 
-            this.rjToggleButton11.AutoSize = true;
-            this.rjToggleButton11.Location = new System.Drawing.Point(10, 409);
-            this.rjToggleButton11.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton11.Name = "rjToggleButton11";
-            this.rjToggleButton11.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton11.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton11.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton11.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton11.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton11.TabIndex = 46;
-            this.rjToggleButton11.Tag = "11";
-            this.rjToggleButton11.UseVisualStyleBackColor = true;
-            this.rjToggleButton11.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton14
-            // 
-            this.rjToggleButton14.AutoSize = true;
-            this.rjToggleButton14.Location = new System.Drawing.Point(10, 508);
-            this.rjToggleButton14.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton14.Name = "rjToggleButton14";
-            this.rjToggleButton14.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton14.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton14.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton14.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton14.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton14.TabIndex = 89;
-            this.rjToggleButton14.Tag = "14";
-            this.rjToggleButton14.UseVisualStyleBackColor = true;
-            this.rjToggleButton14.Click += new System.EventHandler(this.rjToggleButton27_Click);
-            // 
-            // rjToggleButton13
-            // 
-            this.rjToggleButton13.AutoSize = true;
-            this.rjToggleButton13.Location = new System.Drawing.Point(10, 475);
-            this.rjToggleButton13.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton13.Name = "rjToggleButton13";
-            this.rjToggleButton13.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton13.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton13.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton13.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton13.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton13.TabIndex = 88;
-            this.rjToggleButton13.Tag = "13";
-            this.rjToggleButton13.UseVisualStyleBackColor = true;
-            this.rjToggleButton13.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton17
-            // 
-            this.rjToggleButton17.AutoSize = true;
-            this.rjToggleButton17.Location = new System.Drawing.Point(10, 607);
-            this.rjToggleButton17.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton17.Name = "rjToggleButton17";
-            this.rjToggleButton17.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton17.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton17.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton17.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton17.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton17.TabIndex = 99;
-            this.rjToggleButton17.Tag = "17";
-            this.rjToggleButton17.UseVisualStyleBackColor = true;
-            this.rjToggleButton17.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton12
-            // 
-            this.rjToggleButton12.AutoSize = true;
-            this.rjToggleButton12.Location = new System.Drawing.Point(10, 442);
-            this.rjToggleButton12.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton12.Name = "rjToggleButton12";
-            this.rjToggleButton12.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton12.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton12.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton12.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton12.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton12.TabIndex = 48;
-            this.rjToggleButton12.Tag = "12";
-            this.rjToggleButton12.UseVisualStyleBackColor = true;
-            this.rjToggleButton12.Click += new System.EventHandler(this.rjToggleButton0_Click);
-            // 
-            // rjToggleButton16
-            // 
-            this.rjToggleButton16.AutoSize = true;
-            this.rjToggleButton16.Location = new System.Drawing.Point(10, 574);
-            this.rjToggleButton16.MinimumSize = new System.Drawing.Size(45, 22);
-            this.rjToggleButton16.Name = "rjToggleButton16";
-            this.rjToggleButton16.OffBackColor = System.Drawing.Color.Gray;
-            this.rjToggleButton16.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.rjToggleButton16.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjToggleButton16.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.rjToggleButton16.Size = new System.Drawing.Size(45, 22);
-            this.rjToggleButton16.TabIndex = 97;
-            this.rjToggleButton16.Tag = "16";
-            this.rjToggleButton16.UseVisualStyleBackColor = true;
-            this.rjToggleButton16.Click += new System.EventHandler(this.rjToggleButton0_Click);
             // 
             // IOForm
             // 

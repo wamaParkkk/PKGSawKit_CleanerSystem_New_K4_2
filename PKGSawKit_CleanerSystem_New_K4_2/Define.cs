@@ -115,8 +115,12 @@
         Spare7_o = 7,
 
         CH1_Nozzle_FwdBwd_o = 8,
+
+        Spare9_o = 9,
         
         CH1_Brush_FwdBwd_o = 10,
+        
+        Spare11_o = 11,
         
         CH1_Nozzle_Pwr_o = 12,
         CH1_Brush_Pwr_o = 13,
@@ -136,7 +140,9 @@
         Spare23_o = 23,
 
         CH2_Nozzle_FwdBwd_o = 24,
-        
+
+        Spare25_o = 25,
+
         CH2_Nozzle_Pwr_o = 26,        
 
         Tower_Lamp_Red_o = 27,
@@ -167,18 +173,23 @@
             {
                 if      (value == "0")      _io_Name = "Spare00_o";              
                 else if (value == "1")      _io_Name = "Spare01_o";
-                else if (value == "2")      _io_Name = "CH1_AirValve_Top_o";
-                else if (value == "3")      _io_Name = "CH1_AirValve_Bot_o";
-                else if (value == "4")      _io_Name = "CH1_WaterValve_Top_o";
-                else if (value == "5")      _io_Name = "Spare05_o";
-                else if (value == "6")      _io_Name = "CH1_Curtain_AirValve_o";
-                
-                else if (value == "7")      _io_Name = "FluorescentLamp_o";
+
+                else if (value == "2")      _io_Name = "CH1_WaterValve_Top_o";
+                else if (value == "3")      _io_Name = "CH1_AirValve_Top_o";
+                else if (value == "4")      _io_Name = "CH1_AirValve_Bot_o";
+                else if (value == "5")      _io_Name = "CH1_Curtain_AirValve_o";
+
+                else if (value == "6")      _io_Name = "Spare06_o";                
+                else if (value == "7")      _io_Name = "Spare07_o";
 
                 else if (value == "8")      _io_Name = "CH1_Nozzle_FwdBwd_o";
-                
+
+                else if (value == "9")      _io_Name = "Spare09_o";
+
                 else if (value == "10")     _io_Name = "CH1_Brush_FwdBwd_o";
-                
+
+                else if (value == "11")     _io_Name = "Spare11_o";
+
                 else if (value == "12")     _io_Name = "CH1_Nozzle_Pwr_o";
                 else if (value == "13")     _io_Name = "CH1_Brush_Pwr_o";
 
@@ -188,24 +199,25 @@
                 else if (value == "16")     _io_Name = "Hot_WaterHeater_o";
                 else if (value == "17")     _io_Name = "Main_Water_Supply";
 
-                else if (value == "18")     _io_Name = "CH2_AirValve_Top_o";
-                else if (value == "19")     _io_Name = "CH2_AirValve_Bot_o";
-                else if (value == "20")     _io_Name = "CH2_WaterValve_Top_o";
-                else if (value == "21")     _io_Name = "Spare21_o";
-                else if (value == "22")     _io_Name = "CH2_Curtain_AirValve_o";
+                else if (value == "18")     _io_Name = "CH2_WaterValve_Top_o";
+                else if (value == "19")     _io_Name = "CH2_AirValve_Top_o";
+                else if (value == "20")     _io_Name = "CH2_AirValve_Bot_o";
+                else if (value == "21")     _io_Name = "CH2_Curtain_AirValve_o";
 
+                else if (value == "22")     _io_Name = "Spare22_o";
                 else if (value == "23")     _io_Name = "Spare23_o";
 
                 else if (value == "24")     _io_Name = "CH2_Nozzle_FwdBwd_o";
-                
+
+                else if (value == "25")     _io_Name = "Spare25_o";
+
                 else if (value == "26")     _io_Name = "CH2_Nozzle_Pwr_o";
 
-                else if (value == "27")     _io_Name = "Spare27_o";
-
-                else if (value == "28")     _io_Name = "Tower_Lamp_Green_o";
-                else if (value == "29")     _io_Name = "Tower_Lamp_Yellow_o";
-                else if (value == "30")     _io_Name = "Tower_Lamp_Red_o";
-                else if (value == "31")     _io_Name = "Buzzer_o";
+                else if (value == "27")     _io_Name = "Tower_Lamp_Red_o";
+                else if (value == "28")     _io_Name = "Tower_Lamp_Yellow_o";
+                else if (value == "29")     _io_Name = "Tower_Lamp_Green_o";
+                else if (value == "30")     _io_Name = "Buzzer_o";
+                else if (value == "31")     _io_Name = "FluorescentLamp_o";
             }
         }
     }
