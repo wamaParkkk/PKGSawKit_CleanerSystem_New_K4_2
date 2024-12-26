@@ -1,0 +1,20 @@
+[2024-12-12, 09:58:37] Axl library initialization completed
+[2024-12-12, 09:58:37] No axis was searched
+[2024-12-12, 09:58:37] Ajin motion driver initialization fail
+[2024-12-12, 09:58:37] Ajin motion driver close
+[2024-12-12, 09:59:29] Axl library initialization completed
+[2024-12-12, 09:59:29] No axis was searched
+[2024-12-12, 09:59:29] Ajin motion driver initialization fail
+[2024-12-12, 09:59:29] Ajin motion driver close
+[2024-12-12, 10:00:34] Axl library initialization completed
+[2024-12-12, 10:00:34] No axis was searched
+[2024-12-12, 10:00:34] Ajin motion driver initialization fail
+[2024-12-12, 10:00:34] Ajin motion driver close
+[2024-12-12, 10:00:58] Axl library initialization completed
+[2024-12-12, 10:00:58] No axis was searched
+[2024-12-12, 10:00:58] Ajin motion driver initialization fail
+[2024-12-12, 10:00:58] Ajin motion driver close
+[2024-12-12, 11:01:04] Axl library initialization completed
+[2024-12-12, 11:01:04] No axis was searched
+[2024-12-12, 11:01:04] Ajin motion driver initialization fail
+[2024-12-12, 11:01:04] Ajin motion driver close
