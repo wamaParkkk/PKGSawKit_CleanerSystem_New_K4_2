@@ -1,6 +1,6 @@
 ﻿using Ajin_motion_driver;
+using HanyoungNXClassLibrary;
 using MsSqlManagerLibrary;
-using PKGSawKit_CleanerSystem_New_K4_2.SerialComm;
 using System;
 using System.Drawing;
 using System.IO;
@@ -20,9 +20,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
         RecipeSelectForm recipeSelectForm;
         DigitalDlg digitalDlg;
-        AnalogDlg analogDlg;
-
-        HanyoungNuxClass heater_ctrl;
+        AnalogDlg analogDlg;        
 
         private Timer logdisplayTimer = new Timer();
 
@@ -429,8 +427,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 }
             }
 
-            textBoxCurrentWaterTemp.Text = Define.temp_PV.ToString("0.0");
-            textBoxSettingWaterTemp.Text = Define.temp_SV.ToString("0.0");
+            textBoxCurrentWaterTemp.Text = HanyoungNXClassLibrary.Define.temp_PV.ToString("0.0");
+            textBoxSettingWaterTemp.Text = HanyoungNXClassLibrary.Define.temp_SV.ToString("0.0");
 
 
             // Daily count
@@ -679,7 +677,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             try
             {
                 analogDlg = new AnalogDlg();
-                heater_ctrl = new HanyoungNuxClass();
 
                 if (analogDlg.ShowDialog() == DialogResult.OK)
                 {
@@ -687,8 +684,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     bool bResult = double.TryParse(strVal, out double dVal);
                     if (bResult)
                     {
-                        heater_ctrl.set_Temp(dVal);
-                        Define.temp_SV = dVal;
+                        HanyoungNXClass.set_Temp(dVal);
+                        HanyoungNXClassLibrary.Define.temp_SV = dVal;
                     }
                 }
             }
