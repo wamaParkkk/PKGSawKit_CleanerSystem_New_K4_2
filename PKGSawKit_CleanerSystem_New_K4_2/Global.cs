@@ -597,7 +597,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 // Water tank level 센서 체크 ////////////////////////////////////////////////////////////////                
                 if (GetDigValue((int)DigInputList.Water_Level_High_i) == "Off")
                 {
-                    if (nSeqWaitCnt >= 30)     // 3초 대기
+                    if (nSeqWaitCnt >= 10)     // 1초 대기
                     {
                         if (digSet.curDigSet[(int)DigOutputList.Main_Water_Supply] != "On")
                         {
