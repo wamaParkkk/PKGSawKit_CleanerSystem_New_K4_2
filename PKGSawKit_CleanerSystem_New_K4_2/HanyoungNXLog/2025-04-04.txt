@@ -5,3 +5,10 @@
 [2025-04-04, 17:42:09:761] 01DWS,01,0103,0195
 
 [2025-04-04, 17:42:09:778] 포트가 닫혀 있습니다.
+[2025-04-04, 18:13:52:248] Successfully read communication port information
+[2025-04-04, 18:13:52:251] Failed to opened port
+[2025-04-04, 18:13:52:252] Heater controller initialization failed
+[2025-04-04, 18:13:52:253] Heater communication driver has been terminated
+[2025-04-04, 18:13:57:505] 01DWS,01,0103,0195
+
+[2025-04-04, 18:13:57:513] 포트가 닫혀 있습니다.
