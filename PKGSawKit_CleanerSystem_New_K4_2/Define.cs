@@ -313,7 +313,7 @@
         public static byte MaintCurrentPage = 0;
         public static byte RecipeCurrentPage = 0;
 
-        public static bool bInterlockRelease = true;
+        public static bool bInterlockRelease = false;
         public static string sInterlockMsg = "";        
         public static string sInterlockChecklist = "";
         public static bool bDoorAutoRelease = false;
