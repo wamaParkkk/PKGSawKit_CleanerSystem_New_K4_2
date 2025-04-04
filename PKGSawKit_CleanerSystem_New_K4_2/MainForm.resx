@@ -3507,6 +3507,9 @@
         gAoAKACgAoAKACgAoAbSGRNx/n1pDRQl4/zjpUs1iY1wOv5elZs6YdDDn6n2/Cs2dUDPI5PAqDU//9k=
 </value>
   </data>
+  <metadata name="HeaterInitTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>138, 17</value>
+  </metadata>
   <data name="panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAoAAAGXCAYAAACKvcGUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
@@ -3544,7 +3547,4 @@
         riOo87LGBlF90JjWkUB+JpBt3QjvxwZ/vP0HM6zMyh3eHocAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="HeaterInitTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>138, 17</value>
-  </metadata>
 </root>

@@ -1,0 +1,5 @@
+[2025-04-04, 17:42:06] FluorescentLamp_o : On
+[2025-04-04, 17:44:24] START THE PROCESS.
+[2025-04-04, 17:44:32] Buzzer_o : On
+[2025-04-04, 17:44:32] PROCESS COMPLETED.
+[2025-04-04, 17:44:32] Tool 이력 데이터가 저장되었습니다
