@@ -151,12 +151,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             }
             else if (Define.seqMode[module] == Define.MODE_IDLE)
             {
-                if (!btnProcess.Enabled)
-                {
-                    btnProcess.Enabled = true;
-
-                    //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Idle");
-                }
+                if (!btnProcess.Enabled)                
+                    btnProcess.Enabled = true;                                    
 
                 if (btnProcess.BackColor != Color.Transparent)
                     btnProcess.BackColor = Color.Transparent;
@@ -428,6 +424,20 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 }
             }
 
+            if (Global.digSet.curDigSet[(int)DigOutputList.CH2_Booster_AirValve_o] != null)
+            {
+                if (Global.digSet.curDigSet[(int)DigOutputList.CH2_Booster_AirValve_o] == "On")
+                {
+                    textBoxAirBooster.Text = "Open";
+                    textBoxAirBooster.BackColor = Color.LightSkyBlue;
+                }
+                else
+                {
+                    textBoxAirBooster.Text = "Close";
+                    textBoxAirBooster.BackColor = Color.WhiteSmoke;
+                }
+            }
+
             textBoxCurrentWaterTemp.Text = HanyoungNXClassLibrary.Define.temp_PV.ToString("0.0");
             textBoxSettingWaterTemp.Text = HanyoungNXClassLibrary.Define.temp_SV.ToString("0.0");
 
@@ -629,6 +639,23 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     }
                     break;
 
+                case "23":
+                    {
+                        digitalDlg.Init("Close", "Open", "CH2 Booster Air Valve");
+                        if (digitalDlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (digitalDlg.m_strResult == "Close")
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.Off, ModuleName);
+                            }
+                            else
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
+                            }
+                        }
+                    }
+                    break;
+
                 case "24":
                     {
                         digitalDlg.Init2("Home", "Backward", "Forward", "Nozzle Fwd/Bwd");
@@ -746,6 +773,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
                         if (MessageBox.Show("공정을 진행 하겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
+                            /*
                             toolInfoRegistForm = new ToolInfoRegistForm();
                             toolInfoRegistForm.Init(module);
                             if (toolInfoRegistForm.ShowDialog() == DialogResult.OK)
@@ -760,6 +788,17 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                                     Define.seqCtrl[module] = Define.CTRL_RUN;
                                     Define.seqSts[module] = Define.STS_IDLE;
                                 }
+                            }
+                            */
+                            Define.iSelectRecipeModule = module;
+
+                            recipeSelectForm = new RecipeSelectForm();
+
+                            if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                            {
+                                Define.seqMode[module] = Define.MODE_PROCESS;
+                                Define.seqCtrl[module] = Define.CTRL_RUN;
+                                Define.seqSts[module] = Define.STS_IDLE;
                             }
                         }
                     }
@@ -871,6 +910,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     }
                     break;
             }
-        }        
+        }
     }
 }

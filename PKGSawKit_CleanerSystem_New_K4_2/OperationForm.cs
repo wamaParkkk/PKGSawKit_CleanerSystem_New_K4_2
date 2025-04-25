@@ -350,7 +350,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
             if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] != null)
             {
-                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On")                    
+                if ((Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On") ||
+                    (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] == "On"))                   
                 {
                     if (!PM1Water1_1.Visible)
                         PM1Water1_1.Visible = true;
@@ -975,6 +976,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
                         if (MessageBox.Show("공정을 진행 하겠습니까?", "알림", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
+                            /*
                             toolInfoRegistForm = new ToolInfoRegistForm();
                             toolInfoRegistForm.Init((int)MODULE._PM2);
                             if (toolInfoRegistForm.ShowDialog() == DialogResult.OK)
@@ -989,6 +991,17 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                                     Define.seqCtrl[(byte)MODULE._PM2] = Define.CTRL_RUN;
                                     Define.seqSts[(byte)MODULE._PM2] = Define.STS_IDLE;
                                 }
+                            }
+                            */
+                            Define.iSelectRecipeModule = (int)MODULE._PM2;
+
+                            recipeSelectForm = new RecipeSelectForm();
+
+                            if (recipeSelectForm.ShowDialog() == DialogResult.OK)
+                            {
+                                Define.seqMode[(byte)MODULE._PM2] = Define.MODE_PROCESS;
+                                Define.seqCtrl[(byte)MODULE._PM2] = Define.CTRL_RUN;
+                                Define.seqSts[(byte)MODULE._PM2] = Define.STS_IDLE;
                             }
                         }
                     }

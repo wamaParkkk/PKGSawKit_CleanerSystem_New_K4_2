@@ -151,12 +151,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             }
             else if (Define.seqMode[module] == Define.MODE_IDLE)
             {
-                if (!btnProcess.Enabled)
-                {
-                    btnProcess.Enabled = true;
-
-                    //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Idle");
-                }                    
+                if (!btnProcess.Enabled)                
+                    btnProcess.Enabled = true;                                                      
 
                 if (btnProcess.BackColor != Color.Transparent)
                     btnProcess.BackColor = Color.Transparent;
@@ -399,8 +395,9 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     textBoxWaterTop.Text = "Close";
                     textBoxWaterTop.BackColor = Color.WhiteSmoke;
                 }
-                
-                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On")                    
+
+                if ((Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On") ||
+                    (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] == "On"))
                 {
                     if (!PM1Water1_1.Visible)
                         PM1Water1_1.Visible = true;
@@ -438,6 +435,20 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 }
             }
 
+            if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] != null)
+            {
+                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] == "On")
+                {
+                    textBoxWaterBot.Text = "Open";
+                    textBoxWaterBot.BackColor = Color.LightSkyBlue;
+                }
+                else
+                {
+                    textBoxWaterBot.Text = "Close";
+                    textBoxWaterBot.BackColor = Color.WhiteSmoke;
+                }
+            }
+
             if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Curtain_AirValve_o] != null)
             {
                 if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Curtain_AirValve_o] == "On")
@@ -449,6 +460,20 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 {
                     textBoxCurtainAir.Text = "Close";
                     textBoxCurtainAir.BackColor = Color.WhiteSmoke;                    
+                }
+            }
+
+            if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] != null)
+            {
+                if (Global.digSet.curDigSet[(int)DigOutputList.CH1_Booster_AirValve_o] == "On")
+                {
+                    textBoxAirBooster.Text = "Open";
+                    textBoxAirBooster.BackColor = Color.LightSkyBlue;
+                }
+                else
+                {
+                    textBoxAirBooster.Text = "Close";
+                    textBoxAirBooster.BackColor = Color.WhiteSmoke;
                 }
             }
 
@@ -637,7 +662,24 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                             }
                         }
                     }
-                    break;                
+                    break;
+
+                case "5":
+                    {
+                        digitalDlg.Init("Close", "Open", "CH1 Bot Water valve");
+                        if (digitalDlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (digitalDlg.m_strResult == "Close")
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH1_WaterValve_Bot_o, (uint)DigitalOffOn.Off, ModuleName);
+                            }
+                            else
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH1_WaterValve_Bot_o, (uint)DigitalOffOn.On, ModuleName);
+                            }
+                        }
+                    }
+                    break;
 
                 case "6":
                     {
@@ -651,6 +693,23 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                             else
                             {
                                 Global.SetDigValue((int)DigOutputList.CH1_Curtain_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
+                            }
+                        }
+                    }
+                    break;
+
+                case "7":
+                    {
+                        digitalDlg.Init("Close", "Open", "CH1 Booster Air Valve");
+                        if (digitalDlg.ShowDialog() == DialogResult.OK)
+                        {
+                            if (digitalDlg.m_strResult == "Close")
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH1_Booster_AirValve_o, (uint)DigitalOffOn.Off, ModuleName);
+                            }
+                            else
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH1_Booster_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
                             }
                         }
                     }

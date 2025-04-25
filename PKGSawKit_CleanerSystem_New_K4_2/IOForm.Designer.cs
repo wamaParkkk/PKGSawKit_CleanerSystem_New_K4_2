@@ -971,12 +971,12 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Silver;
+            this.label52.ForeColor = System.Drawing.Color.Navy;
             this.label52.Location = new System.Drawing.Point(61, 175);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(116, 25);
+            this.label52.Size = new System.Drawing.Size(210, 25);
             this.label52.TabIndex = 102;
-            this.label52.Text = "[Y22] Spare";
+            this.label52.Text = "[Y22] CH2. Booster air";
             // 
             // label51
             // 
@@ -1154,12 +1154,12 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Silver;
+            this.label39.ForeColor = System.Drawing.Color.Navy;
             this.label39.Location = new System.Drawing.Point(61, 241);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(116, 25);
+            this.label39.Size = new System.Drawing.Size(210, 25);
             this.label39.TabIndex = 37;
-            this.label39.Text = "[Y06] Spare";
+            this.label39.Text = "[Y06] CH1. Booster air";
             // 
             // rjToggleButton3
             // 
@@ -1316,12 +1316,12 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.Silver;
+            this.label34.ForeColor = System.Drawing.Color.Navy;
             this.label34.Location = new System.Drawing.Point(61, 76);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(116, 25);
+            this.label34.Size = new System.Drawing.Size(235, 25);
             this.label34.TabIndex = 27;
-            this.label34.Text = "[Y01] Spare";
+            this.label34.Text = "[Y01] CH1. Bottom water";
             // 
             // label35
             // 

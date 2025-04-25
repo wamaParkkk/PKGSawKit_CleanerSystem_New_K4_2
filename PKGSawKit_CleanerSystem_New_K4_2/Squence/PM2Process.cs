@@ -167,10 +167,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
             alarm_List.alarm_code = almId;
             Define.sAlarmName = alarm_List.alarm_code;
 
-            Global.EventLog(almId + ":" + Define.sAlarmName, ModuleName, "Alarm");
-
-            //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Alarm");
-            //HostConnection.Host_Set_AlarmName(Global.hostEquipmentInfo, ModuleName, Define.sAlarmName);
+            Global.EventLog(almId + ":" + Define.sAlarmName, ModuleName, "Alarm");            
         }
 
         public void F_HOLD_STEP()
@@ -226,10 +223,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
                 Define.seqCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqSts[module] = Define.STS_PROCESS_ING;
 
-                Global.EventLog("START THE PROCESS.", ModuleName, "Event");
-
-                //HostConnection.Host_Set_ProcessEndTime(Global.hostEquipmentInfo, ModuleName, "");
-                //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Process");
+                Global.EventLog("START THE PROCESS.", ModuleName, "Event");                
             }
             else if ((Define.seqMode[module] == Define.MODE_PROCESS) && (Define.seqCtrl[module] == Define.CTRL_HOLD))
             {
@@ -343,9 +337,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
                 Define.seqCtrl[module] = Define.CTRL_RUNNING;
                 Define.seqSts[module] = Define.STS_INIT_ING;
 
-                Global.EventLog("START THE INITIALIZE.", ModuleName, "Event");
-
-                //HostConnection.Host_Set_RunStatus(Global.hostEquipmentInfo, ModuleName, "Init");
+                Global.EventLog("START THE INITIALIZE.", ModuleName, "Event");                
             }
             else if ((Define.seqMode[module] == Define.MODE_INIT) && (Define.seqCtrl[module] == Define.CTRL_HOLD))
             {
@@ -418,9 +410,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
 
                     Global.prcsInfo.prcsRecipeName[module] = Define.sSelectRecipeName[module];
 
-                    Global.EventLog("Recipe name : " + Global.prcsInfo.prcsRecipeName[module], ModuleName, "Event");
-
-                    //HostConnection.Host_Set_RecipeName(Global.hostEquipmentInfo, ModuleName, Global.prcsInfo.prcsRecipeName[module]);
+                    Global.EventLog("Recipe name : " + Global.prcsInfo.prcsRecipeName[module], ModuleName, "Event");                    
 
                     F_INC_STEP();
                 }
@@ -518,14 +508,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
                 Global.prcsInfo.prcsStepTotalTime[module] = prcsRecipe.ProcessTime[prcsRecipe.StepNum - 1];
 
                 Global.EventLog("Process Step : " + (prcsRecipe.StepNum).ToString(), ModuleName, "Event");
-
-                // 서버에 매 초 경과되는 Process time을 보내려고 했으나, delay소지가 있어 경과되는 Step num을 보내는 것으로 수정 /////
-                string strProgressTime = string.Format("{0}/{1}",
-                        Global.prcsInfo.prcsCurrentStep[module].ToString(), Global.prcsInfo.prcsTotalStep[module].ToString());
-
-                //HostConnection.Host_Set_ProgressTime(Global.hostEquipmentInfo, ModuleName, strProgressTime);
-                //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+                
                 // Air
                 if (prcsRecipe.Air[prcsRecipe.StepNum - 1] == "On") // [prcsRecipe.StepNum - 1]이 구조체적으로 현재 Step임
                 {
@@ -634,6 +617,18 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
                     if (bWaitSet)
                         F_WAIT_IO_DESETTING();
 
+                    // Water open 후, 5초 후에 Booster air open
+                    if (step.Times >= 5)
+                    {
+                        if (prcsRecipe.Water[prcsRecipe.StepNum - 1] == "On")
+                        {
+                            if (Global.digSet.curDigSet[(int)DigOutputList.CH2_Booster_AirValve_o] != "On")
+                            {
+                                Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.On, ModuleName);
+                            }
+                        }
+                    }
+
                     step.INC_TIMES();
                     
                     // Ui에 표시 할 시간
@@ -672,8 +667,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
 
         private void P_PROCESS_ProcessEnd()
         {
-            Global.prcsInfo.prcsEndTime[module] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-            //HostConnection.Host_Set_ProcessEndTime(Global.hostEquipmentInfo, ModuleName, Global.prcsInfo.prcsEndTime[module]);
+            Global.prcsInfo.prcsEndTime[module] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");            
 
             Define.seqMode[module] = Define.MODE_IDLE;
             Define.seqCtrl[module] = Define.CTRL_IDLE;
@@ -686,7 +680,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
 
             F_DAILY_COUNT();
 
-            F_TOOL_HISTORY();
+            //F_TOOL_HISTORY();
         }        
 
         private void F_PROCESS_ALL_VALVE_CLOSE()
@@ -694,6 +688,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2.Squence
             // Air
             Global.SetDigValue((int)DigOutputList.CH2_AirValve_Top_o, (uint)DigitalOffOn.Off, ModuleName);
             Global.SetDigValue((int)DigOutputList.CH2_AirValve_Bot_o, (uint)DigitalOffOn.Off, ModuleName);
+            Global.SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.Off, ModuleName);
 
             // Water
             Global.SetDigValue((int)DigOutputList.CH2_WaterValve_Top_o, (uint)DigitalOffOn.Off, ModuleName);            

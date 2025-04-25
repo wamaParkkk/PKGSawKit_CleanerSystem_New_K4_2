@@ -53,9 +53,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
         public static string serialPortInfoPath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\SerialComm\"));
         public static string dailyCntfilePath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\DailyCount\"));
         public static string toolHistoryfilePath = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\ToolHistory\"));
-
-        public static string hostEquipmentInfo = "K5EE_PKGsawCleaningSystem";
-        public static string hostEquipmentInfo_Log = "K5EE_PKGsawCleaningSystemLog";
+        
+        public static string hostEquipmentInfo_Log = "K5EE_PKGsawCleaningSystemLog_K4_2";
 
         private static Timer timer = new Timer();
 
@@ -64,9 +63,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
         private static InterlockDisplayForm interlockDisplayForm;
         private static uint nSeqWaitCnt = 0;
-
-        static string sendMsg_System = "Idle";
-        static string sendMsg_Water = "Idle";        
 
         #region 이벤트로그 파일 폴더 및 파일 생성       
         public static void EventLog(string Msg, string moduleName, string Mode)
@@ -271,35 +267,12 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
             timer.Elapsed += new ElapsedEventHandler(VALUE_INTERLOCK_CHECK);
             timer.Start();
 
-            /*
+            GetDailyLogCount("PM1");
+            GetDailyLogCount("PM2");
+            
             string strRtn = HostConnection.Connect();
-            if (strRtn == "OK")
-            {
-                HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "System", "Idle");                
-
-                HostConnection.Host_Set_RunStatus(hostEquipmentInfo, "PM1", "Idle");
-                HostConnection.Host_Set_RunStatus(hostEquipmentInfo, "PM2", "Idle");                
-
-                HostConnection.Host_Set_RecipeName(hostEquipmentInfo, "PM1", "");
-                HostConnection.Host_Set_RecipeName(hostEquipmentInfo, "PM2", "");                
-
-                HostConnection.Host_Set_AlarmName(hostEquipmentInfo, "PM1", "");
-                HostConnection.Host_Set_AlarmName(hostEquipmentInfo, "PM2", "");                
-
-                HostConnection.Host_Set_ProgressTime(hostEquipmentInfo, "PM1", "0/0");
-                HostConnection.Host_Set_ProgressTime(hostEquipmentInfo, "PM2", "0/0");                
-
-                HostConnection.Host_Set_ProcessEndTime(hostEquipmentInfo, "PM1", "");
-                HostConnection.Host_Set_ProcessEndTime(hostEquipmentInfo, "PM2", "");                                                
-
-                GetDailyLogCount("PM1");
-                GetDailyLogCount("PM2");
-            }
-            else
-            {
+            if (strRtn != "OK")
                 MessageBox.Show("EE 서버 접속에 실패했습니다", "알림", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }     
-            */
         }
 
         public static void GetDailyLogCount(string moduleName)
@@ -514,22 +487,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     {
                         Define.sInterlockMsg = "";
                         Define.sInterlockChecklist = "";
-                    }
-
-                    if (sendMsg_System != "Alarm")
-                    {
-                        //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "System", "Alarm");
-                        sendMsg_System = "Alarm";
-                    }
-                }
-                else
-                {
-                    if (sendMsg_System != "Idle")
-                    {
-                        //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "System", "Idle");
-                        sendMsg_System = "Idle";
-                    }
-                }
+                    }                    
+                }                
                 /*
                 if (GetDigValue((int)DigInputList.Front_Door_Sensor_i) == "Off")
                 {
@@ -648,22 +607,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                         {
                             Define.sInterlockMsg = "";
                             Define.sInterlockChecklist = "";
-                        }
-
-                        if (sendMsg_Water != "Alarm")
-                        {
-                            //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "WaterTank", "Alarm");
-                            sendMsg_Water = "Alarm";
-                        }
-                    }
-                    else
-                    {
-                        if (sendMsg_Water != "Alarm")
-                        {
-                            //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "WaterTank", "Alarm");
-                            sendMsg_Water = "Alarm";
-                        }
-                    }
+                        }                        
+                    }                    
                 }
                 else
                 {
@@ -678,13 +623,7 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                                 {
                                     SetDigValue((int)DigOutputList.Hot_WaterHeater_o, (uint)DigitalOffOn.On, "PM1");
                                 }
-                            }
-
-                            if (sendMsg_Water != "Idle")
-                            {
-                                //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "WaterTank", "Idle");
-                                sendMsg_Water = "Idle";
-                            }
+                            }                            
                         }
                     }
                     else
@@ -709,22 +648,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                             {
                                 Define.sInterlockMsg = "";
                                 Define.sInterlockChecklist = "";
-                            }
-
-                            if (sendMsg_Water != "Alarm")
-                            {
-                                //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "WaterTank", "Alarm");
-                                sendMsg_Water = "Alarm";
-                            }
-                        }
-                        else
-                        {
-                            if (sendMsg_Water != "Alarm")
-                            {
-                                //HostConnection.Host_Set_SystemStatus(hostEquipmentInfo, "WaterTank", "Alarm");
-                                sendMsg_Water = "Alarm";
-                            }
-                        }
+                            }                            
+                        }                        
                     }
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -735,7 +660,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
 
 
             // CH1~2 Water sol valve open 체크
-            if ((digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On") ||                
+            if ((digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Top_o] == "On") ||
+                (digSet.curDigSet[(int)DigOutputList.CH1_WaterValve_Bot_o] == "On") ||
                 (digSet.curDigSet[(int)DigOutputList.CH2_WaterValve_Top_o] == "On"))
             {
                 if (digSet.curDigSet[(int)DigOutputList.Hot_Water_Pump_o] != "On")
@@ -927,19 +853,23 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                 if ((ioName == (int)DigOutputList.CH1_AirValve_Top_o) ||                    
                     (ioName == (int)DigOutputList.CH1_AirValve_Bot_o) ||
 
-                    (ioName == (int)DigOutputList.CH1_WaterValve_Top_o))
+                    (ioName == (int)DigOutputList.CH1_WaterValve_Top_o) ||
+                    (ioName == (int)DigOutputList.CH1_WaterValve_Bot_o) ||
+
+                    (ioName == (int)DigOutputList.CH1_Booster_AirValve_o))
                 {
                     if (setValue == (uint)DigitalOffOn.On)
                     {
                         if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On") &&
+                            (GetDigValue((int)DigInputList.CH1_Door_Sensor_i) == "On"))
                         {
                             return true;
                         }                            
                         else
                         {
                             retMsg = "EMO switch is on";
-                            EventLog("[INTERLOCK#1] " + "EMO switch is on", ModuleName, "Event");
+                            EventLog("[INTERLOCK#1] " + "EMO switch is on or Door is opened", ModuleName, "Event");
                             return false;
                         }                            
                     }
@@ -954,14 +884,15 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     if (setValue == (uint)DigitalOffOn.On)
                     {
                         if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On") &&
+                            (GetDigValue((int)DigInputList.CH1_Door_Sensor_i) == "On"))
                         {
                             return true;
                         }                            
                         else
                         {
                             retMsg = "EMO switch is on";
-                            EventLog("[INTERLOCK#1] " + "EMO switch is on", ModuleName, "Event");
+                            EventLog("[INTERLOCK#1] " + "EMO switch is on or Door is opened", ModuleName, "Event");
                             return false;
                         }                            
                     }
@@ -986,7 +917,8 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                     if (setValue == (uint)DigitalOffOn.On)
                     {
                         if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On") &&
+                            (GetDigValue((int)DigInputList.CH1_Door_Sensor_i) == "On"))
                         {
                             return true;
                         }
@@ -1012,7 +944,71 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                         }
                     }
                 }                                
-            }            
+            }
+
+            if (ModuleName == "PM2")
+            {
+                if ((ioName == (int)DigOutputList.CH2_AirValve_Top_o) ||
+                    (ioName == (int)DigOutputList.CH2_AirValve_Bot_o) ||
+
+                    (ioName == (int)DigOutputList.CH2_WaterValve_Top_o) ||
+
+                    (ioName == (int)DigOutputList.CH2_Booster_AirValve_o))
+                {
+                    if (setValue == (uint)DigitalOffOn.On)
+                    {
+                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On") &&
+                            (GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "On"))
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            retMsg = "EMO switch is on or Door is opened";
+                            EventLog("[INTERLOCK#2] " + "EMO switch is on or Door is opened", ModuleName, "Event");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+
+                if (ioName == (int)DigOutputList.CH2_Nozzle_Pwr_o)
+                {
+                    if (setValue == (uint)DigitalOffOn.On)
+                    {
+                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On") &&
+                            (GetDigValue((int)DigInputList.CH2_Door_Sensor_i) == "On"))
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            retMsg = "EMO switch is on or Door is opened";
+                            EventLog("[INTERLOCK#2] " + "EMO switch is on or Door is opened", ModuleName, "Event");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
+                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            retMsg = "EMO switch is on";
+                            EventLog("[INTERLOCK#2] " + "EMO switch is on", ModuleName, "Event");
+                            return false;
+                        }
+                    }
+                }
+            }
 
             return true;
         }
@@ -1113,12 +1109,15 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
         {            
             SetDigValue((int)DigOutputList.CH1_AirValve_Top_o, (uint)DigitalOffOn.Off, "PM1");
             SetDigValue((int)DigOutputList.CH1_AirValve_Bot_o, (uint)DigitalOffOn.Off, "PM1");
-            SetDigValue((int)DigOutputList.CH1_WaterValve_Top_o, (uint)DigitalOffOn.Off, "PM1");                        
-            
+            SetDigValue((int)DigOutputList.CH1_WaterValve_Top_o, (uint)DigitalOffOn.Off, "PM1");
+            SetDigValue((int)DigOutputList.CH1_WaterValve_Bot_o, (uint)DigitalOffOn.Off, "PM1");
+            SetDigValue((int)DigOutputList.CH1_Booster_AirValve_o, (uint)DigitalOffOn.Off, "PM1");
+
 
             SetDigValue((int)DigOutputList.CH2_AirValve_Top_o, (uint)DigitalOffOn.Off, "PM2");
             SetDigValue((int)DigOutputList.CH2_AirValve_Bot_o, (uint)DigitalOffOn.Off, "PM2");
-            SetDigValue((int)DigOutputList.CH2_WaterValve_Top_o, (uint)DigitalOffOn.Off, "PM2");            
+            SetDigValue((int)DigOutputList.CH2_WaterValve_Top_o, (uint)DigitalOffOn.Off, "PM2");
+            SetDigValue((int)DigOutputList.CH2_Booster_AirValve_o, (uint)DigitalOffOn.Off, "PM2");
 
 
             SetDigValue((int)DigOutputList.Hot_Water_Pump_o, (uint)DigitalOffOn.Off, "PM1");

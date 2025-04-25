@@ -1,0 +1,28 @@
+[2025-04-25, 11:00:22:176] Successfully read communication port information
+[2025-04-25, 11:00:22:178] Failed to opened port
+[2025-04-25, 11:00:22:180] Heater controller initialization failed
+[2025-04-25, 11:00:22:180] Heater communication driver has been terminated
+[2025-04-25, 11:00:27:204] 01DWS,01,0103,0195
+
+[2025-04-25, 11:00:27:218] 포트가 닫혀 있습니다.
+[2025-04-25, 11:01:15:869] Successfully read communication port information
+[2025-04-25, 11:01:15:871] Failed to opened port
+[2025-04-25, 11:01:15:872] Heater controller initialization failed
+[2025-04-25, 11:01:15:873] Heater communication driver has been terminated
+[2025-04-25, 11:01:20:881] 01DWS,01,0103,0195
+
+[2025-04-25, 11:01:20:886] 포트가 닫혀 있습니다.
+[2025-04-25, 11:08:46:761] Successfully read communication port information
+[2025-04-25, 11:08:46:763] Failed to opened port
+[2025-04-25, 11:08:46:764] Heater controller initialization failed
+[2025-04-25, 11:08:46:766] Heater communication driver has been terminated
+[2025-04-25, 11:08:51:775] 01DWS,01,0103,0195
+
+[2025-04-25, 11:08:51:782] 포트가 닫혀 있습니다.
+[2025-04-25, 11:15:13:478] Successfully read communication port information
+[2025-04-25, 11:15:13:480] Failed to opened port
+[2025-04-25, 11:15:13:481] Heater controller initialization failed
+[2025-04-25, 11:15:13:482] Heater communication driver has been terminated
+[2025-04-25, 11:15:18:479] 01DWS,01,0103,0195
+
+[2025-04-25, 11:15:18:484] 포트가 닫혀 있습니다.
