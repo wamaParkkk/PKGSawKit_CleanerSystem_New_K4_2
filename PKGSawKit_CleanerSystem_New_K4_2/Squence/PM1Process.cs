@@ -1,9 +1,7 @@
 ﻿using Ajin_motion_driver;
-using MsSqlManagerLibrary;
 using System;
 using System.IO;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PKGSawKit_CleanerSystem_New_K4_2.Squence

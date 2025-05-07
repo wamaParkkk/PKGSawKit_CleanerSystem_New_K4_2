@@ -1,6 +1,5 @@
 ﻿using Ajin_motion_driver;
 using HanyoungNXClassLibrary;
-using MsSqlManagerLibrary;
 using System;
 using System.Drawing;
 using System.IO;
