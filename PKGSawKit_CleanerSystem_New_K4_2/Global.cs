@@ -944,6 +944,17 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                         }
                     }
                 }                                
+            }            
+
+            return true;
+        }
+
+        private static bool SETPOINT_INTERLOCK_CHECK2(int ioName, uint setValue, string ModuleName, ref string retMsg)
+        {
+            // Interlock이 해제 상태인지 체크
+            if (Define.bInterlockRelease)
+            {
+                return true;
             }
 
             if (ModuleName == "PM2")
@@ -990,77 +1001,6 @@ namespace PKGSawKit_CleanerSystem_New_K4_2
                         {
                             retMsg = "EMO switch is on or Door is opened";
                             EventLog("[INTERLOCK#2] " + "EMO switch is on or Door is opened", ModuleName, "Event");
-                            return false;
-                        }
-                    }
-                    else
-                    {
-                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            retMsg = "EMO switch is on";
-                            EventLog("[INTERLOCK#2] " + "EMO switch is on", ModuleName, "Event");
-                            return false;
-                        }
-                    }
-                }
-            }
-
-            return true;
-        }
-
-        private static bool SETPOINT_INTERLOCK_CHECK2(int ioName, uint setValue, string ModuleName, ref string retMsg)
-        {
-            // Interlock이 해제 상태인지 체크
-            if (Define.bInterlockRelease)
-            {
-                return true;
-            }
-            
-            if (ModuleName == "PM2")
-            {
-                if ((ioName == (int)DigOutputList.CH2_AirValve_Top_o) ||
-                    (ioName == (int)DigOutputList.CH2_AirValve_Bot_o) ||
-
-                    (ioName == (int)DigOutputList.CH2_WaterValve_Top_o))                    
-                {
-                    if (setValue == (uint)DigitalOffOn.On)
-                    {
-                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            retMsg = "EMO switch is on";
-                            EventLog("[INTERLOCK#2] " + "EMO switch is on", ModuleName, "Event");
-                            return false;
-                        }
-                    }
-                    else
-                    {
-                        return true;
-                    }
-                }
-
-                if (ioName == (int)DigOutputList.CH2_Nozzle_Pwr_o)
-                {
-                    if (setValue == (uint)DigitalOffOn.On)
-                    {
-                        if ((GetDigValue((int)DigInputList.EMO_Front_i) == "On") &&
-                            (GetDigValue((int)DigInputList.EMO_Rear_i) == "On"))
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            retMsg = "EMO switch is on";
-                            EventLog("[INTERLOCK#2] " + "EMO switch is on", ModuleName, "Event");
                             return false;
                         }
                     }
